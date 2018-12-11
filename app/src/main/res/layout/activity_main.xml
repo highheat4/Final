@@ -12,6 +12,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -41,11 +42,24 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/countdown"
+            android:id="@+id/countdown2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
             android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="12sp"
+            android:text="countdown"
+            android:textAlignment="viewStart"
+            android:textSize="36sp"
+            android:typeface="serif"
+            tools:text="countdown" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
             android:lineSpacingExtra="12sp"
             android:text="countdown"
             android:textAlignment="viewStart"
@@ -57,13 +71,14 @@
             android:id="@+id/flightnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:lineSpacingExtra="12sp"
-            android:text="TextView"
+            android:text="Flight Number"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/rocket"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="12sp"
             android:text="Rocket"

@@ -119,6 +119,9 @@ public final class MainActivity extends AppCompatActivity {
             TextView rocket = findViewById(R.id.rocket);
             rocket.setText("Rocket: " + response.get("rocket").toString().split("\"")[7]);
 
+            TextView countdown2 = findViewById(R.id.countdown2);
+            countdown2.setText("Time until the next launch is");
+
 
             //Get the current date and time
             Date computerDate = new Date();
@@ -144,7 +147,7 @@ public final class MainActivity extends AppCompatActivity {
                     + "-" + Integer.toString(array[2])
                     + " " + Integer.toString(array[3]) + ":" + Integer.toString(array[4]) + ":"
                     + Integer.toString(array[5]);
-            countdown.setText("Time until the next launch is --- " + displayTimeUntil);
+            countdown.setText(displayTimeUntil);
         } catch (JSONException ignored) { }
     }
 
