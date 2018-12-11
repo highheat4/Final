@@ -107,9 +107,14 @@ public final class MainActivity extends AppCompatActivity {
             String[] temp = displayText.split("T");
             String date = temp[0];
             String time = temp[1];
-            displayText = "DATE: " + date + "                   " + "TIME: " + time;
+            displayText = "DATE: " + date + "                       TIME: " + time;
             jsonResult.setText("Launch date is --- " + displayText);
 
+            TextView description = findViewById(R.id.description);
+            description.setText("Mission Details: " + response.get("details").toString());
+
+            TextView rocket = findViewById(R.id.rocket);
+            rocket.setText("Rocket: " + response.get("rocket_id").toString());
 
 
             //Get the current date and time

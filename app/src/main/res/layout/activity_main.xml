@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:fontFamily="sans-serif-condensed"
+            android:text="time and date"
             android:textAlignment="viewStart"
             android:textSize="20sp" />
 
@@ -48,6 +49,18 @@
             android:textAlignment="viewStart"
             android:textSize="20sp"
             tools:text="countdown" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/rocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rocket" />
 
     </LinearLayout>
 </FrameLayout>
