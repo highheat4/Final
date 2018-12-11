@@ -113,8 +113,11 @@ public final class MainActivity extends AppCompatActivity {
             TextView description = findViewById(R.id.description);
             description.setText("Mission Details: " + response.get("details").toString());
 
+            TextView flightnumber = findViewById(R.id.flightnumber);
+            flightnumber.setText("Flight Number: " + response.get("flight_number").toString());
+
             TextView rocket = findViewById(R.id.rocket);
-            rocket.setText("Rocket: " + response.get("rocket_id").toString());
+            rocket.setText("Rocket: " + response.get("rocket").toString().split("\"")[7]);
 
 
             //Get the current date and time

@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:cropToPadding="false"
+            android:paddingLeft="5dp"
             app:srcCompat="@drawable/spacexlogo" />
 
         <TextView
@@ -45,22 +46,37 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:fontFamily="sans-serif-condensed"
+            android:lineSpacingExtra="12sp"
             android:text="countdown"
             android:textAlignment="viewStart"
-            android:textSize="20sp"
+            android:textSize="36sp"
+            android:typeface="serif"
             tools:text="countdown" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/flightnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description" />
+            android:lineSpacingExtra="12sp"
+            android:text="TextView"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/rocket"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rocket" />
+            android:lineSpacingExtra="12sp"
+            android:text="Rocket"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="12sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Description" />
 
     </LinearLayout>
 </FrameLayout>
